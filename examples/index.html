@@ -5,11 +5,17 @@
     <title>custom-element demo</title>
   </head>
   <body>
-    <custom-element></custom-element>
+    <die-face sides="20"></die-face>
+    <die-face></die-face>
+    <die-face></die-face>
+    <die-face></die-face>
+    <die-face></die-face>
+    <die-face></die-face>
+    <button onclick="document.querySelectorAll('die-face').forEach(e => e.roll())">Roll all!</button>
 
     <script type="module">
-      // import 'https://unpkg.com/@github/custom-element-boilerplate@latest/dist/custom-element.js'
-      import '../src/custom-element.ts'
+      // import 'https://unpkg.com/@github/die-face-boilerplate@latest/dist/die-face.js'
+      import '../src/die-face-element.ts'
     </script>
   </body>
 </html>
